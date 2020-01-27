@@ -1,0 +1,12 @@
+
+
+@import "../variables";
+@import "variables";
+
+@import "__title/test-box__title";
+
+.test-box {
+  padding: $box-padding;
+  min-height: $box-height;
+  background: transparent url("/img/1.jpg") no-repeat center center;
+}

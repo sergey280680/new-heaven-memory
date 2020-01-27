@@ -1,0 +1,52 @@
+{
+  "name": "gulp-sass-template",
+  "version": "1.0.0",
+  "description": "TBD",
+  "main": "index.js",
+  "scripts": {
+    "watch": "gulp watch",
+    "build": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malyshev/gulp-sass-template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/malyshev/gulp-sass-template/issues"
+  },
+  "homepage": "https://github.com/malyshev/gulp-sass-template#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "compass-mixins": "^0.12.10",
+    "del": "^5.0.0",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-flatmap": "^1.0.2",
+    "gulp-rename": "^1.4.0",
+    "gulp-svgmin": "^2.2.0",
+    "gulp-terser": "^1.2.0",
+    "lazypipe": "^1.0.2",
+    "minimist": "^1.2.0"
+  },
+  "dependencies": {
+    "browserslist": "^1.5.1"
+  },
+  "overrideBrowserslist": [
+    "> 1%",
+    "ie >= 8",
+    "edge >= 15",
+    "ie_mob >= 10",
+    "ff >= 45",
+    "chrome >= 45",
+    "safari >= 7",
+    "opera >= 23",
+    "ios >= 7",
+    "android >= 4",
+    "bb >= 10"
+  ]
+}
