@@ -1,4 +1,71 @@
 
+//@import "test-box/test-box";
+
+@import "fonts";
+@import "general";
+@import "hidden-menu";
+@import "header";
 @import "variables";
 
-@import "test-box/test-box";
+body {
+  background-color: greenyellow;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?qybap');
+  src:  url('fonts/icomoon.eot?qybap#iefix') format('embedded-opentype'),
+  url('fonts/icomoon.ttf?qybap') format('truetype'),
+  url('fonts/icomoon.woff?qybap') format('woff'),
+  url('fonts/icomoon.svg?qybap#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cog:before {
+  content: "\e994";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-facebook2:before {
+  content: "\ea91";
+}
+.icon-play:before {
+  content: "\e912";
+}
+.icon-steam:before {
+  content: "\eaac";
+}
+.icon-burger:before {
+  content: "\e900";
+}
+.icon-copyright:before {
+  content: "\e901";
+}
+.icon-logo:before {
+  content: "\e902";
+}
+.icon-search:before {
+  content: "\e903";
+}
+
+
+
+

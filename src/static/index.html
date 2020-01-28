@@ -7,14 +7,151 @@
     <meta name="robots" content="noindex">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- =========== font-awesome icon ============== -->
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+
+
     <link rel="stylesheet" href="/css/index.min.css">
 </head>
 <body>
-HELLO
+<header>
+    <!-- ================= hidden menu block ==========================  -->
+    <div class="hidden-menu menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+            <span></span>
+        </label>
+
+        <div class="menu__box">
+            <div class="menu__name">
+                <p>Martin Hörich</p>
+            </div>
+            <div class="menu__email">
+                <p>test2019@gmail.com</p>
+            </div>
+            <hr>
+            <ul class="menu__sidebar-nav">
+                <li class="menu__sidebar-nav-item">
+                    <a class="menu__js-scroll-trigger" href="#">
+                        <i class="menu__fa fa-clipboard menu__icon" aria-hidden="true"></i>
+                        Create a memorial
+                    </a>
+                </li>
+                <li class="menu__sidebar-nav-item">
+                    <a class="menu__js-scroll-trigger" href="#">
+                        <i class="fa fa-question-circle menu__icon" aria-hidden="true"></i>
+                        Get Help
+                    </a>
+                </li>
+                <li class="menu__sidebar-nav-item">
+                    <a class="menu__js-scroll-trigger" href="#">
+                        <i class="fa fa-user-circle-o menu__icon" aria-hidden="true"></i>
+                        My Account
+                    </a>
+                </li>
+                <li class="menu__sidebar-nav-item">
+                    <a class="menu__js-scroll-trigger" href="#">
+                        <i class="fa fa-check-square-o menu__icon" aria-hidden="true"></i>
+                        Plans and Features
+                    </a>
+                </li>
+                <li class="menu__sidebar-nav-item">
+                    <a class="menu__js-scroll-trigger" href="#">
+                        <i class="fa fa-podcast menu__icon" aria-hidden="true"></i>
+                        About Us
+                    </a>
+                </li>
+                <li class="menu__sidebar-nav-item menu__sidebar-nav-item--line">
+                    <a class="menu__js-scroll-trigger" href="#">
+                        <i class="fa fa-envelope menu__icon" aria-hidden="true"></i>
+                        Contact Us
+                    </a>
+                </li>
+                <li class="menu__sidebar-nav-item">
+                    <a class="menu__js-scroll-trigger" href="#">
+                        <i class="fa fa-window-restore menu__icon" aria-hidden="true"></i>
+                        Terms of Use
+                    </a>
+                </li>
+                <li class="menu__sidebar-nav-item menu__sidebar-nav-item--line">
+                    <a class="menu__js-scroll-trigger" href="#">
+                        <i class="fa fa-lock menu__icon" aria-hidden="true"></i>
+                        Privacy Policy
+                    </a>
+                </li>
+                <li class="menu__sidebar-nav-item">
+                    <a class="menu__js-scroll-trigger" href="#">
+                        <i class="fa fa-share-square-o menu__icon" aria-hidden="true"></i>
+                        Sign Out
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--  ==================== hidden box search  ================== -->
+    <div class="hidden-search search">
+        <input id="hidden-search" type="checkbox"class="search__btn" />
+        <label class="search__btn" for="hidden-search">
+            <span></span>
+        </label>
+
+        <div class="search-box field">
+            <form class="memorial-search__field" method="get" >
+                <input name="s" class="search__field-input"  placeholder="Enter the last name" type="search">
+                <button class="search__field-button" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ============= header  ==============  -->
+    <div class="header">
+        <div class="header__row">
+
+            <div class="header__menu-burger">
+                <button class="header__menu-toggle-btn">
+                    <img src="../svg/burger.svg" alt="burger">
+                <!--    <i class="header__burger fa fa-bars fa-lg"></i>  -->
+                </button>
+            </div>
+
+            <div class="header__logo">
+                <a target="_blank" href="home.html">
+                    <img src="../svg/logo.svg" class="header__logo-img" alt="logo">
+                </a>
+            </div>
+
+            <div class="header__search">
+                <button class="header__menu-search-btn">
+                    <img src="../svg/search.svg" alt="search">
+               <!--     <i class="header__fa-search fa fa-search fa-lg" aria-hidden="true"></i>  -->
+                </button>
+            </div>
+
+        </div>
+        <hr class="header__border-burger">
+
+    </div>
+</header>
 
 
-<div class="test-box">
-    <div class="test-box__title">HELLO</div>
+<div class="icons">
+    <div>
+        <span class="icon-logo"></span>
+        <span class="icon-steam"></span>
+        <span class="icon-steam"></span>
+    </div>
 </div>
+
+
+
+
+
+</div>
+
+
+
+
+
 </body>
 </html>

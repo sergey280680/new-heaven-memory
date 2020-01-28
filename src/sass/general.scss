@@ -1,0 +1,60 @@
+body {
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+header {
+  margin: 0;
+  padding: 0;
+}
+hr {
+  margin: 0;
+  border: 0;
+  border-top: 1px solid #E8E9EC;
+  width: 100%;
+}
+section {
+  margin: 0;
+  padding: 0;
+}
+a, button {
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  border: 0;
+}
+button:hover {
+  transform: scale(1.01) scale(1);
+}
+a:active,
+a:hover,
+a:link {
+  text-decoration: none;
+  color: #000;
+}
+input {
+  outline: none;
+}
+h3, h4, h5, p, a {
+  font-family: 'Sarabun', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+h1, h2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 127%;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  color: #000000;
+  margin: 0;
+}
+.fa {
+  color: #000;
+}

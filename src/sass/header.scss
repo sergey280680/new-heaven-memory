@@ -1,0 +1,62 @@
+
+/* ====== header home page ===== */
+.header {
+  display: block;
+  height: 56px;
+  width: 100%;
+  background: rgba(0, 170, 238, 0);
+  box-shadow: inset 0 5px 9px rgba(154, 147, 140, 0.5);
+}
+.header__row {
+  display: flex;
+  height: 56px;
+}
+.header__menu-burger,
+.header__menu-toggle {
+  border-right: 1px solid rgba(255,255,255,.3);
+  display: block;
+  width: 45px;
+  //height: 56px;
+  padding-top: 20px;
+  padding-left: 18px;
+}
+.header__menu-toggle-btn {
+  background: transparent;
+}
+.header__fa-bars {
+  color: #fff;
+}
+.header__logo {
+  //background-image: url("../svg/logo.svg");
+  margin: 16px auto;
+  display: block;
+}
+.header__logo-img {
+  width: 76px;
+}
+.header__border {
+  opacity: 0.3;
+}
+.header__search {
+  display: block;
+  width: 60px;
+  height: 56px;
+  text-align: center;
+}
+/* ==== general site header === */
+.header__burger {
+  color: #000;
+}
+.header__menu-burger {
+  border-right: 1px solid #B08D57;
+}
+.header__border-burger {
+  border: 0.05em solid #B08D57;
+}
+.header__menu-search {
+  margin-top: 16px;
+}
+.header__menu-search-btn {
+  background: none;
+  margin-top: 17px;
+}
