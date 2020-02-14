@@ -1,0 +1,34 @@
+
+.menu {
+  height: 0;
+  #menu__toggle {
+    opacity: 0;
+    margin-top: 20px;
+    margin-left: 26px;
+    &:checked ~ .menu__box {
+      visibility: visible;
+      left: 0;
+    }
+    &:checked ~ .menu__button {
+      position: fixed;
+      width: $main_width;
+      height: 100%;
+      z-index: 4;
+      top: 1px;
+      cursor: default;
+    }
+  }
+  .menu__button {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 16px;
+    left: 19px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 2;
+  }
+}
+
+

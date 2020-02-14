@@ -1,5 +1,10 @@
 
-/* ====== header home page ===== */
+@import "search/search";
+@import "menu/button";
+@import "menu/hidden";
+
+
+
 .header {
   display: block;
   height: 56px;
@@ -17,7 +22,7 @@
   display: block;
   width: 45px;
   //height: 56px;
-  padding-top: 20px;
+  padding-top: 21px;
   padding-left: 18px;
 }
 .header__menu-toggle-btn {
@@ -27,7 +32,6 @@
   color: #fff;
 }
 .header__logo {
-  //background-image: url("../svg/logo.svg");
   margin: 16px auto;
   display: block;
 }
@@ -43,7 +47,8 @@
   height: 56px;
   text-align: center;
 }
-/* ==== general site header === */
+
+
 .header__burger {
   color: #000;
 }
@@ -58,5 +63,6 @@
 }
 .header__menu-search-btn {
   background: none;
-  margin-top: 17px;
+  margin-top: 21px;
+
 }

@@ -1,0 +1,60 @@
+
+
+
+@import "../variables";
+
+.menu {
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 250px;
+    height: 100%;
+    margin: 0;
+    list-style: none;
+    background-color: $color_2;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    transition-duration: .25s;
+    z-index: 5;
+
+    .menu__name {
+      display: block;
+      margin: 25px 0 2px 16px;
+      font-size: 18px;
+    }
+    .menu__email {
+      display: block;
+      margin-left: 16px;
+      margin-bottom: 17px;
+      font-size: 14px;
+    }
+    .menu__sidebar-nav {
+      top: 0;
+      width: 250px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      .menu__sidebar-nav-item .menu__js-scroll-trigger {
+        display: block;
+        text-decoration: none;
+        color: $color_1;
+        padding: 13px 0 13px 20px;
+      }
+      .menu__sidebar-nav-item .menu__js-scroll-trigger:hover {
+        text-decoration: none;
+        color: $color_3;
+        background: rgba(255, 255, 255, 0.2);
+      }
+      .menu__sidebar-nav-item--line {
+        border-bottom: 2px solid #E8E9EC;
+      }
+      .menu__icon {
+        margin-right: 7px;
+      }
+    }
+  }
+}
+
