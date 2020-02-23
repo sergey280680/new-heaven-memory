@@ -8,7 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!-- =========== font-awesome icon ============== -->
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+    <script src="https://kit.fontawesome.com/7b06861f18.js" crossorigin="anonymous"></script>
+
 
 
     <link rel="stylesheet" href="/css/index.min.css">
@@ -17,14 +19,12 @@
 <header>
 <!--     ================= hidden-modal-menu-block ==========================  -->
 
-<!--  menu_button-->
     <div class="modal-menu">
         <input id="modal-menu__toggle" type="checkbox" />
-        <label class="modal-menu__button" for="modal-menu__toggle">
+        <label class="modal-menu__btn" for="modal-menu__toggle">
             <span></span>
         </label>
 
-<!--  menu_hidden-->
         <div class="modal-menu__window">
             <div class="modal-menu__name">
                 <p>Martin Hörich</p>
@@ -36,7 +36,7 @@
             <ul class="modal-menu__sidebar-nav">
                 <li class="modal-menu__sidebar-nav-item">
                     <a class="modal-menu__js-scroll-trigger" href="#">
-                        <i class="modal-menu__fa fa-clipboard menu__icon" aria-hidden="true"></i>
+                        <i class="modal-menu__fa fas fa-edit modal-menu__icon" aria-hidden="true"></i>
                         Create a memorial
                     </a>
                 </li>
@@ -64,7 +64,7 @@
                         About Us
                     </a>
                 </li>
-                <li class="modal-menu__sidebar-nav-item menu__sidebar-nav-item--line">
+                <li class="modal-menu__sidebar-nav-item modal-menu__sidebar-nav-item--line">
                     <a class="modal-menu__js-scroll-trigger" href="#">
                         <i class="fa fa-envelope modal-menu__icon" aria-hidden="true"></i>
                         Contact Us
@@ -76,7 +76,7 @@
                         Terms of Use
                     </a>
                 </li>
-                <li class="modal-menu__sidebar-nav-item menu__sidebar-nav-item--line">
+                <li class="modal-menu__sidebar-nav-item modal-menu__sidebar-nav-item--line">
                     <a class="modal-menu__js-scroll-trigger" href="#">
                         <i class="fa fa-lock modal-menu__icon" aria-hidden="true"></i>
                         Privacy Policy
@@ -99,7 +99,7 @@
             <span></span>
         </label>
 
-        <div class="search__box">
+        <div class="search__hidden-form">
             <form class="search__form" method="get" >
                 <input name="s" class="search__input"  placeholder="Enter the last name" type="search">
                 <button class="search__button" type="submit"><img src="../svg/search.svg" alt="search"></button>

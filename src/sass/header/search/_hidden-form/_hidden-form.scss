@@ -1,0 +1,13 @@
+
+@import "../variables";
+
+.search__hidden-form{
+  position: fixed;
+  top: -5px;
+  width: $main-width;
+  list-style: none;
+  transition-duration: .25s;
+  z-index: 5;
+  margin-top: 5px;
+  display: none;
+}

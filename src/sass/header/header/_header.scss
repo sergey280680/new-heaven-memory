@@ -1,0 +1,17 @@
+@import "_row/row";
+@import "_menu-burger/menu-burger";
+@import "_menu-toggle-button/_menu-toggle-button";
+@import "_logo/logo";
+@import "_search/search";
+@import "_menu-search-button/menu-search-button";
+@import "_border-burger/border-burger";
+@import "_variables";
+
+
+.header {
+  display: block;
+  height: 56px;
+  width: $main_width;
+  background: rgba(0, 170, 238, 0);
+  box-shadow: inset 0 5px 9px rgba(154, 147, 140, 0.5);
+}

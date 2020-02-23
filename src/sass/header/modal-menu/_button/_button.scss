@@ -1,33 +1,35 @@
 
-.menu {
-  height: 0;
-  #menu__toggle {
+@import "../variables";
+
+.modal-menu {
+  #modal-menu__toggle {
     opacity: 0;
-    margin-top: 20px;
-    margin-left: 26px;
-    &:checked ~ .menu__box {
-      visibility: visible;
-      left: 0;
-    }
-    &:checked ~ .menu__button {
-      position: fixed;
-      width: $main_width;
-      height: 100%;
-      z-index: 4;
-      top: 1px;
-      cursor: default;
-    }
   }
-  .menu__button {
+
+  #modal-menu__toggle:checked ~ .modal-menu__window {
+    visibility: visible;
+    left: 0;
+  }
+  .modal-menu__btn {
+    z-index: 10;
     display: flex;
     align-items: center;
     position: absolute;
-    top: 16px;
-    left: 19px;
-    width: 26px;
-    height: 26px;
+    top: 5px;
+    left: 5px;
+    width: 50px;
+    height: 50px;
     cursor: pointer;
-    z-index: 2;
+  }
+  #modal-menu__toggle:checked ~ .modal-menu__btn {
+    position: fixed;
+    width: $main_width;
+    height: 100%;
+    z-index: 4;
+    top: 1px;
+    cursor: default;
+    background-color: $brown;
+    opacity: 0.5;
   }
 }
 

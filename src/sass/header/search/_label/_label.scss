@@ -1,0 +1,30 @@
+
+@import "../variables";
+#hidden-search {
+  display: none;
+  &:checked ~ .search__hidden-form {
+    visibility: visible;
+    left: 0;
+    display: block;
+  }
+  &:checked ~ .search__label {
+    position: fixed;
+    width: $main_width;
+    height: 100%;
+    z-index: 4;
+    top: 1px;
+    cursor: default;
+    right: 0;
+  }
+}
+.search__label {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 2;
+}

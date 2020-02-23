@@ -1,0 +1,14 @@
+
+@import "../variables";
+
+.modal-menu__js-scroll-trigger {
+  display: block;
+  text-decoration: none;
+  color: $black;
+  padding: 13px 0 13px 0;
+}
+.modal-menu__js-scroll-trigger:hover {
+  text-decoration: none;
+  color: $brown;
+  background: $background-gray;
+}

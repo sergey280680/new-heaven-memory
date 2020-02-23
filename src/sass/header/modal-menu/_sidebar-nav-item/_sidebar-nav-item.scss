@@ -1,0 +1,14 @@
+
+@import "../variables";
+
+.modal-menu__sidebar-nav-item {
+  display: block;
+  text-decoration: none;
+  color: $black;
+  padding: 6px 0 6px 20px;
+  .modal-menu__sidebar-nav-item:hover {
+    text-decoration: none;
+    color: $brown;
+    background: $background-gray;
+  }
+}
