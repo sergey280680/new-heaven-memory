@@ -1,0 +1,36 @@
+
+@import "../variables";
+
+.form__input-tab-form {
+  position: relative;
+  right: 16px;
+  border: $border_form;
+  margin-bottom: 24px;
+  width: $main_width;
+  border-radius: 6px;
+  color: #000;
+  font-style: normal;
+  font-weight: normal;
+  height: 56px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.form__input-tab-form:focus {
+  border: 1px solid #000;
+}
+.form__input-tab-form:focus {
+  color: #000;
+}
+
+.form__input-tab-form:focus ~ .form__box-input-label,
+.form__input-tab-form:valid ~ .form__box-input-label {
+  background-color: #fff;
+  top: -15px;
+  left: 14px;
+  padding: 3px 5px;
+  font-size: 10px;
+  color: #A6AAB4;
+}
