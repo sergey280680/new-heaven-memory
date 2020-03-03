@@ -1,0 +1,13 @@
+input::-webkit-search-cancel-button {
+  display: none;
+}
+.search__input {
+  width: 100%;
+  height: 56px;
+  padding-left: 10px;
+  border: 1px solid #B08D57;
+  border-radius: 6px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.7);
+  margin-top: 100px;
+}

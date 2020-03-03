@@ -1,0 +1,34 @@
+
+@import "../variables";
+
+
+.search__input::placeholder {
+  color: $color_1;
+  letter-spacing: $letter-spacing;
+  font-size: $font-size-1;
+}
+
+/* ======= Firefox prior to version 51 uses a pseudo-element*/
+.search__input::-moz-placeholder {
+  color: $color_1;
+  letter-spacing: $letter-spacing;
+  font-size: $font-size-1;
+}
+/* ====== Chrome, to version 57, Opera to version 44, Safari to version 10.1 and Android use a pseudo-element*/
+.search__input::-webkit-input-placeholder {
+  color: $color_1;
+  letter-spacing: $letter-spacing;
+  font-size: $font-size-1;
+}
+/* ===== Internet Explorer uses a pseudo-class*/
+.search__input:-ms-input-placeholder {
+  color: $color_1;
+  letter-spacing: $letter-spacing;
+  font-size: $font-size-1;
+}
+/* ==== Microsoft Edge uses a pseudo-element*/
+.search__input::-ms-input-placeholder {
+  color: $color_1;
+  letter-spacing: $letter-spacing;
+  font-size: $font-size-1;
+}
