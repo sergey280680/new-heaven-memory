@@ -7,46 +7,54 @@
     "watch": "gulp watch",
     "build": "gulp"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/malyshev/gulp-sass-template.git"
-  },
-  "author": "",
+  "repository": "git+https://github.com/malyshev/gulp-sass-template.git",
+  "author": "sergey280680 <sergey280680@mail.ru>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/malyshev/gulp-sass-template/issues"
   },
   "homepage": "https://github.com/malyshev/gulp-sass-template#readme",
   "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "babelify": "^10.0.0",
     "browser-sync": "^2.26.7",
+    "browserify": "^16.2.3",
     "compass-mixins": "^0.12.10",
     "del": "^5.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
+    "gulp-babel": "^8.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-cssnano": "^2.1.3",
     "gulp-flatmap": "^1.0.2",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
     "gulp-svgmin": "^2.2.0",
     "gulp-terser": "^1.2.0",
     "lazypipe": "^1.0.2",
-    "minimist": "^1.2.0"
+    "minimist": "^1.2.0",
+    "run-sequence": "^2.2.1",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
   },
   "dependencies": {
-    "browserslist": "^1.5.1"
+    "jquery": "^3.4.1"
   },
-  "overrideBrowserslist": [
-    "> 1%",
-    "ie >= 8",
-    "edge >= 15",
-    "ie_mob >= 10",
-    "ff >= 45",
-    "chrome >= 45",
-    "safari >= 7",
-    "opera >= 23",
-    "ios >= 7",
-    "android >= 4",
-    "bb >= 10"
-  ]
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "@babel/env"
+          ]
+        }
+      ]
+    ]
+  }
 }

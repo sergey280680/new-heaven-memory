@@ -18,6 +18,13 @@ const paths = {
         input: 'src/svg/*.svg',
         output: 'dist/svg/'
     },
+    js: {
+        input: [
+            'node_modules/jquery/dist/jquery.min.js',
+            'src/js/**/*.js'
+        ],
+        output: 'dist/js/'
+    },
     staticFiles: {
         input: 'src/static/**/*',
         output: 'dist/'
@@ -25,47 +32,46 @@ const paths = {
     reload: './dist/'
 };
 
-
 /**
  * Gulp Packages
  */
 
 // General
-var {gulp, src, dest, watch, series, parallel} = require('gulp');
-var del = require('del');
-var flatmap = require('gulp-flatmap');
-var lazypipe = require('lazypipe');
-var rename = require('gulp-rename');
+const {gulp, src, dest, watch, series, parallel} = require('gulp');
+const del = require('del');
+const flatmap = require('gulp-flatmap');
+const lazypipe = require('lazypipe');
+const rename = require('gulp-rename');
+
+// Javascript
+const babel = require("gulp-babel");
+const concat = require("gulp-concat");
+const sourcemaps = require("gulp-sourcemaps");
+const babelify = require("babelify");
 
 // Styles
-var sass = require('gulp-sass');
-var prefix = require('gulp-autoprefixer');
-var minify = require('gulp-cssnano');
+const sass = require('gulp-sass');
+const minify = require('gulp-cssnano');
 
 // SVGs
-var svgmin = require('gulp-svgmin');
+const svgmin = require('gulp-svgmin');
 
 // BrowserSync
-var browserSync = require('browser-sync');
+const browserSync = require('browser-sync');
 
-var cleanDist = function (done) {
+const cleanDist = function (done) {
     del.sync([
         paths.output
     ]);
     return done();
 };
 
-var buildStyles = function (done) {
+const buildStyles = function (done) {
     return src(paths.styles.input)
         .pipe(sass({
             outputStyle: 'expanded',
             sourceComments: true,
             includePaths: ['./node_modules/compass-mixins/lib'],
-        }))
-        .pipe(prefix({
-            browsers: ['last 2 version', '> 0.25%'],
-            cascade: true,
-            remove: true
         }))
         .pipe(dest(paths.styles.output))
         .pipe(rename({suffix: '.min'}))
@@ -79,39 +85,50 @@ var buildStyles = function (done) {
 };
 
 // Optimize SVG files
-var buildSVGs = function (done) {
+const buildSVGs = function (done) {
     return src(paths.svgs.input)
         .pipe(svgmin())
         .pipe(dest(paths.svgs.output));
 };
 
-var copyFiles = function (done) {
+const copyFiles = function (done) {
     return src(paths.staticFiles.input)
         .pipe(dest(paths.staticFiles.output));
 
 };
 
-var copyFonts = function (done) {
+const copyFonts = function (done) {
     return src(paths.fonts.input)
         .pipe(dest(paths.fonts.output));
 
 };
 
-var startServer = function (done) {
+const buildJavascript = function(done) {
+    return src(paths.js.input)
+        .pipe(sourcemaps.init())
+        .pipe(babel({presets: ['@babel/env']}))
+
+        .pipe(concat("index.js"))
+        .pipe(sourcemaps.write("."))
+        .pipe(dest(paths.js.output))
+};
+
+const startServer = function (done) {
     browserSync.init({
         server: {
-            baseDir: "./dist"
+            baseDir: "./dist",
+            index: "home.html"
         }
     });
     done();
 };
 
-var reloadBrowser = function (done) {
+const reloadBrowser = function (done) {
     browserSync.reload();
     done();
 };
 
-var watchSource = function (done) {
+const watchSource = function (done) {
     watch(paths.input, series(exports.default, reloadBrowser));
     done();
 };
@@ -122,6 +139,7 @@ exports.default = series(
         buildStyles,
         buildSVGs,
         copyFonts,
+        buildJavascript,
         copyFiles
     )
 );
