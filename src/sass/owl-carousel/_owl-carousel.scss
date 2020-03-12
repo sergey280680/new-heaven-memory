@@ -1,10 +1,63 @@
 
-@import "_item/_owl-carousel__item";
-@import "_img/owl-carousel__img";
-@import "_title/_title";
+//@import "_item/_owl-carousel__item";
+//@import "_img/owl-carousel__img";
+//@import "_title/_title";
+//
+//.owl-carousel {
+//  display: flex;
+//  margin: 0 16px;
+//}
 
-.owl-carousel {
-  display: flex;
-  margin: 0 16px;
+/*======= Recent online memorial websites =========*/
+/*======== owl carousel ========*/
+.memorial-websites {
+  margin: 0;
+  position: relative;
+  top: -50px;
 }
-
+.memorial-websites__title {
+  margin: 0 40px 27px;
+}
+.owl-carousel__item {
+  width: 175px;
+}
+.owl-carousel__img {
+  display: block;
+  width: 185px;
+  height: 175px;
+  border-radius: 5%;
+  margin-bottom: 9px;
+  margin-top: 10px;
+  box-shadow: 1px 3px 6px 1px rgba(0,0,0,0.3);
+}
+.owl-carousel__p  {
+  text-align: center;
+}
+.owl-carousel__item-caption,
+.owl-carousel__item-years {
+  text-align: center;
+}
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel button.owl-dot {
+  color: #fff;
+  border: none;
+  font: inherit;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #B08D57;
+  margin: 0 35px;
+  cursor: pointer;
+  box-shadow: 3px 3px 6px 1px rgba(176,141,87,0.5);
+  transform: scale(0.9) scale(1);
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+  background: #B08D57;
+  color: #FFF;
+  text-decoration: none;
+  transform: scale(1.01) scale(1);
+}
+.owl-theme .owl-nav {
+  margin-top: 32px;
+}
