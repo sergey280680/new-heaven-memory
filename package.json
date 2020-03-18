@@ -37,7 +37,7 @@
     "gulp-svgmin": "^2.2.0",
     "gulp-terser": "^1.2.0",
     "lazypipe": "^1.0.2",
-    "minimist": "^1.2.0",
+    "minimist": "^1.2.2",
     "run-sequence": "^2.2.1",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
