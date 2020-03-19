@@ -1,0 +1,19 @@
+
+// Using
+//.div {
+//   @include _425 {
+//       @content;
+//   }
+//}
+//media_mixin.scss
+
+@mixin _425 {
+  @media (min-width: 425px){
+    @content;
+  }
+}
+@mixin _768 {
+  @media (min-width: 768px){
+    @content;
+  }
+}

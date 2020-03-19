@@ -1,0 +1,8 @@
+.header__logo {
+  margin: 16px auto;
+  display: block;
+  @include _768 {
+    margin-left: 7%;
+    margin-right: 20px;
+  }
+}

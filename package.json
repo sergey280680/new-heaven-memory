@@ -43,6 +43,7 @@
     "vinyl-source-stream": "^2.0.0"
   },
   "dependencies": {
+    "gulp-group-css-media-queries": "^1.2.2",
     "jquery": "^3.4.1"
   },
   "browserify": {

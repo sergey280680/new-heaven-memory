@@ -1,13 +1,15 @@
 
+//@import "../media-mixin/_media-mixin.scss"
+@import "__row/row";
+@import "__menu-burger/menu-burger";
+@import "__menu-toggle-button/_menu-toggle-button";
+@import "__logo/logo";
 
-@import "_row/row";
-@import "_menu-burger/menu-burger";
-@import "_menu-toggle-button/_menu-toggle-button";
-@import "_logo/logo";
-@import "_search/search";
-@import "_menu-search-button/menu-search-button";
-@import "_border-burger/border-burger";
+@import "__search/_search";
+@import "__menu-search-button/menu-search-button";
+@import "__border-burger/border-burger";
 @import "variables";
+
 
 
 .header {
@@ -21,3 +23,4 @@
   min-height: 445px;
   background: transparent url('../img/image-0.png') 50% -120px no-repeat fixed;
 }
+@import "__menu-row/_header__menu-row.scss"

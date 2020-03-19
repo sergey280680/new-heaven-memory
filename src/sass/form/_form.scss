@@ -1,10 +1,10 @@
 
-
-@import "_box-input/form__box-input";
-@import "_input-tab-form/form__input-tab-form";
-@import "_box-input-label/form__box-input-label";
-@import "_button/form__button";
-
+.form {
+@import "__contaner/form__contaner";
+@import "__input/form__input";
+@import "__label/form__label";
+@import "__button/form__button";
+}
 
 
 

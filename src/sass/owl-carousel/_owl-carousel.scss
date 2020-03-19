@@ -1,0 +1,25 @@
+
+
+
+
+.owl-carousel {
+  display: inline-flex;
+}
+.owl-carousel__item {
+  width: 185px;
+  margin: 0 8px;
+}
+.owl-carousel__img {
+  display: block;
+  width: 185px;
+  height: 175px;
+  border-radius: 5%;
+  margin-bottom: 9px;
+  margin-top: 10px;
+  box-shadow: 1px 3px 6px 1px rgba(0,0,0,0.3);
+}
+.owl-carousel__p,
+.owl-carousel__item-name,
+.owl-carousel__item-years {
+  text-align: center;
+}

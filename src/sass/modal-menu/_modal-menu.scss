@@ -1,15 +1,21 @@
 
-@import "_button/button";
-@import "_window/window";
-@import "_name/name";
-@import "_email/email";
-@import "_sidebar-nav/sidebar-nav";
-@import "_sidebar-nav-item/sidebar-nav-item";
-@import "_js-scroll-trigger/js-scroll-trigger";
+
+
+@import "../media-mixin/media-mixin";
+@import "__button/button";
+@import "__window/window";
+@import "__name/name";
+@import "__email/email";
+@import "__sidebar-nav/sidebar-nav";
+@import "__sidebar-nav-item/sidebar-nav-item";
+@import "__js-scroll-trigger/js-scroll-trigger";
 @import "_sidebar-nav-item--line/sidebar-nav-item--line";
-@import "_icon/icon";
+@import "__icon/icon";
 
 
 .modal-menu {
   height: 0;
+  @include _768 {
+    display: none;
+  }
 }

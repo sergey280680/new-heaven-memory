@@ -1,7 +1,7 @@
 
+@import "../variables";
 
-
-.form__button {
+&__button {
   width: 100%;
   height: 48px;
   border-radius: 32px;
@@ -13,7 +13,8 @@
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
-}
-.form__button:hover {
-  transform: scale(1.01) scale(1);
+
+  &:hover {
+    transform: scale(1.01) scale(1);
+  }
 }
